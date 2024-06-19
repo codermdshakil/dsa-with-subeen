@@ -3,6 +3,7 @@ using namespace std;
 
 int main()
 {
+    // O(1) Time Complexity Example 1
     int n1, n2, result;
     n1 = 10;
     n2 = 20;
