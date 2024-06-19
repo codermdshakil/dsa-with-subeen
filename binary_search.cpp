@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// binary search function
 int binary_search(int ar[], int n, int x)
 {
     int left, right, mid;
