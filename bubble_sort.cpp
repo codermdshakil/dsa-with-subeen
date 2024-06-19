@@ -4,12 +4,13 @@ using namespace std;
 // create bubble_sort function
 void bubble_sort(int ar[], int n)
 {
-    int temp;
+    int temp, count = 0;
 
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < n - 1; j++) //  n - i -1 or n-1
+        for (int j = 0; j < n - i - 1; j++) //  n - i -1 (best) it take 15 steps  or n-1 it take 30 steps for 6 size array
         {
+            count += 1;
             if (ar[j] > ar[j + 1])
             {
                 temp = ar[j];
@@ -18,6 +19,7 @@ void bubble_sort(int ar[], int n)
             }
         }
     }
+    cout << count << endl;
 }
 
 int main()
