@@ -15,12 +15,14 @@ void insertion_sort(int ar[], int n)
         j = i - 1;
 
         // condition  1. index , condition 2 value
+        
         // assending order 
         while (j >= 0 && ar[j] > item)
         {
             ar[j + 1] = ar[j];
             j = j - 1;
         }
+
         // dessending order 
         // while (j >= 0 && ar[j] > item)
         // {
